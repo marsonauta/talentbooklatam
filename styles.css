@@ -140,6 +140,7 @@ select:last-child{
 }
 .contact a{
   text-decoration:none;
+  font-size:18px;
   color:hsla(237,64%,49%,.7);
   transition:color .5s ease;
 }
@@ -148,7 +149,7 @@ select:last-child{
 }
 .contact a i{
   margin-right:4px;
-  font-size:18px;
+  font-size:20px;
 }
 footer{
   color:#999;
