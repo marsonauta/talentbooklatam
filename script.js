@@ -30,6 +30,8 @@ function concatValues( obj ) {
 // Oda a don Dimi
 $(function(){
   $(window).jKonamicode(function(){
-    alert("Hello World!");
+    $('body').addClass('dimi-show');
+    setTimeout(function(){ $('body').removeClass('dimi-show');
+  }, 3500);
   });
 });
