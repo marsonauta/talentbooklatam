@@ -8,13 +8,14 @@ body{
   font-family: 'Quicksand', sans-serif;
   max-width: 1024px;
   margin: 0 auto;
+  padding:10px;
   font-size: 16px;
   line-height:1.5;
   color: #333;
 }
 header,
 .intro,
-.filter,
+.filters,
 footer{
   margin: 0 2%;
 }
@@ -22,7 +23,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:24px 0;
+  padding:8px 0;
 }
 a{
   color:#333;
@@ -46,13 +47,16 @@ nav a:hover{
   color: #fff;
   transition: all .5s ease;
 }
+.mobile-no{
+  display:none;
+}
 h1{
   font-size: 40px;
   width: 100px;
   margin:0;
 }
 h2{
-  font-size:36px;
+  font-size:32px;
   line-height:1.2;
   font-weight:normal;
   padding-bottom:24px;
@@ -71,21 +75,28 @@ h4{
   margin:0;
 }
 /* Filtros */
-.filter{
+.filters{
   padding:16px 0;
   list-style-type:none;
 }
-.filter li{
+.filters li{
   display:inline-block;
   margin:0 8px 0 0;
+  padding:0;
+}
+.filters *{
+  margin-right:8px;
 }
 select{
-  margin:0 8px;
+  margin:;
   padding:8px;
   border:1px solid #000;
   background:#fff;
   font-family: 'Quicksand', sans-serif;
   font-size:14px;
+}
+select:last-child{
+  margin-right:0;
 }
 /* Grid Latamers */
 .grid {
@@ -117,9 +128,10 @@ select{
   margin-bottom:16px;
 }
 .contact{
-  margin:0;
-  padding:0;
-  list-style: none
+  margin:16px 0 0 0;
+  padding:16px 0 0 0;
+  list-style: none;
+  border-top:1px solid hsla(237,64%,49%,.1);
 }
 .contact li{
   margin-bottom:4px;
@@ -127,6 +139,10 @@ select{
 .contact a{
   text-decoration:none;
   color:hsla(237,64%,49%,.7);
+  transition:color .5s ease;
+}
+.contact a:hover{
+  color:#333;
 }
 .contact a i{
   margin-right:4px;
@@ -141,9 +157,13 @@ footer{
   border-top:1px solid hsla(237,64%,49%,.1);
 }
 @media (min-width:760px){
+  h2{
+    font-size:38px;
+  }
   .grid-sizer,
   .latamer {
     width: 46%;
     margin:2%;
   }
+  .mobile-no{display:inline;}
 }

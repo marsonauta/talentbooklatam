@@ -1,25 +1,29 @@
-// Masonry / Isotope
+// init Isotope
 var $grid = $('.grid').isotope({
   itemSelector: '.latamer',
-  layoutMode: 'fitRows'
+  sortBy : 'random'
 });
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function() {
-    var name = $(this).find('.name').text();
-    return name.match( /ium$/ );
-  }
-};
-// bind filter on select change
-$('.filters-select').on( 'change', function() {
-  // get filter value from option value
-  var filterValue = this.value;
-  // use filterFn if matches value
-  filterValue = filterFns[ filterValue ] || filterValue;
+
+// store filter for each group
+var filters = {};
+
+$('.filters').on( 'change', function( event ) {
+  var $select = $( event.target );
+  // get group key
+  var filterGroup = $select.attr('value-group');
+  // set filter for group
+  filters[ filterGroup ] = event.target.value;
+  // combine filters
+  var filterValue = concatValues( filters );
+  // set filter for Isotope
   $grid.isotope({ filter: filterValue });
 });
+
+// flatten object by concatting values
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
