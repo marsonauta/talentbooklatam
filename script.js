@@ -32,6 +32,6 @@ $(function(){
   $(window).jKonamicode(function(){
     $('body').addClass('dimi-show');
     setTimeout(function(){ $('body').removeClass('dimi-show');
-  }, 8000);
+  }, 10000);
   });
 });
