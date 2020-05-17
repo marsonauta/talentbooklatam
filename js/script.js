@@ -31,7 +31,10 @@ function concatValues( obj ) {
 $(function(){
   $(window).jKonamicode(function(){
     $('body').addClass('dimi-show');
+    setTimeout(function(){ $('.dimi').addClass('adios');
+    }, 8500);
     setTimeout(function(){ $('body').removeClass('dimi-show');
-  }, 10000);
+    }, 10000);
+    $('.dimi').removeClass('adios');
   });
 });
