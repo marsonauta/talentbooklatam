@@ -159,6 +159,51 @@ footer{
   font-size:14px;
   border-top:1px solid hsla(237,64%,49%,.1);
 }
+@keyframes espacial {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.dimi-show{
+  transition:all .5s ease;
+  color:#fff;
+  background:url(https://media.thegospelcoalition.org/wp-content/uploads/sites/4/2018/12/18123444/lightstock_379702_full_tgc.jpg) #000 no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}
+.dimi{
+  display:none;
+}
+.dimi-show h1,
+.dimi-show h2,
+.dimi-show h3,
+.dimi-show h4,
+.dimi-show h5,
+.dimi-show a,
+.dimi-show footer{
+  color:#fff;
+}
+.dimi-show nav a,
+.dimi-show .latamer{
+  background:rgba(0,0,0,.5);
+}
+.dimi-show h2 strong{
+  color:#fff;
+}
+.dimi-show .dimi{
+  display:block;
+  position:fixed;
+  left:50%;
+  top:80px;
+  animation: espacial 6s ease-in-out infinite;
+}
+
 @media (min-width:760px){
   h2{
     font-size:38px;

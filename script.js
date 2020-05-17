@@ -4,7 +4,7 @@ var $grid = $('.grid').isotope({
   sortBy : 'random'
 });
 
-// store filter for each group
+// Almacena filtro de cada grupo
 var filters = {};
 
 $('.filters').on( 'change', function( event ) {
@@ -19,7 +19,7 @@ $('.filters').on( 'change', function( event ) {
   $grid.isotope({ filter: filterValue });
 });
 
-// flatten object by concatting values
+// Megamix de valores
 function concatValues( obj ) {
   var value = '';
   for ( var prop in obj ) {
@@ -27,3 +27,9 @@ function concatValues( obj ) {
   }
   return value;
 }
+// Oda a don Dimi
+$(function(){
+  $(window).jKonamicode(function(){
+    alert("Hello World!");
+  });
+});
