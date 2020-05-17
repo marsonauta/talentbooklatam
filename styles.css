@@ -81,11 +81,11 @@ h4{
 }
 .filters li{
   display:inline-block;
-  margin:0 8px 0 0;
+  margin:0;
+  width:100%;
   padding:0;
 }
 .filters *{
-  margin-right:8px;
   margin-bottom:4px;
 }
 select{
@@ -169,6 +169,13 @@ footer{
   }
   .mobile-no{
     display:inline;
+  }
+  .filters li{
+    margin:0 8px 0 0;
+    width:auto;
+  }
+  .filters *{
+    margin-right:8px;
   }
   select{
     font-size:16px;
