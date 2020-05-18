@@ -201,6 +201,9 @@ footer{
 }
 .dimi-show .dimi{
   display:block;
+  height:651px;
+  width:565px;
+  background:url(../img/dimi.png) no-repeat center;
   position:fixed;
   right:10%;
   top:80px;
