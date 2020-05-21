@@ -1,0 +1,15 @@
+.latamer {
+    float: left;
+    border: 1px solid #333;
+    padding:24px;
+    border-radius:4px;
+    background:all .5s ease;
+  }
+  .latamer:hover{
+    background:hsla(237,90%,49%,.03);
+    transition:background .5s ease;
+    background:all .5s ease;
+  }
+  .latamer p{
+    margin-bottom:16px;
+  }

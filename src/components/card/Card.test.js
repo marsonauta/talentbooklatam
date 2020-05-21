@@ -1,0 +1,24 @@
+import React from 'react';
+import { render } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
+import Card from './Card'
+
+describe('Card component', () => {
+    test('render the name', () => {
+        const expectedName = "Andrea Escudero"
+
+        const { container, getByText } = render(<Card name={expectedName}/>)
+        expect(getByText(expectedName)).toBeInTheDocument()
+        expect(container.firstChild).toMatchSnapshot(`<h3>${expectedName}</h3>`)
+    })
+
+    test('render the rol', () => {
+        const expectedRol = "UX Designer Senior"
+
+        const { container, getByText } = render(<Card rol={expectedRol} />)
+        expect(getByText(expectedRol)).toBeInTheDocument()
+        expect(container.childNodes[2]).toMatchSnapshot(`<h4>${expectedRol}</h4>`)
+    })
+})
+
+

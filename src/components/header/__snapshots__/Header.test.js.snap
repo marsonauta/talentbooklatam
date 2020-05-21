@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Matches the snapshot 1`] = `
+<header>
+  <h1>
+    <a
+      href="/"
+    >
+      <i
+        className="fas fa-plane-departure"
+      />
+    </a>
+  </h1>
+  <nav>
+    <a
+      href="en.html"
+    >
+      🇺🇸
+      <span
+        className="mobile-no"
+      >
+         English
+      </span>
+    </a>
+    <a
+      href="pt.html"
+    >
+      🇧🇷
+      <span
+        className="mobile-no"
+      >
+         Português
+      </span>
+    </a>
+  </nav>
+</header>
+`;
