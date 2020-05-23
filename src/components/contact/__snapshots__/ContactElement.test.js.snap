@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactElement component contain hiperlink: <a href="http://some.reference" 1`] = `
+<div>
+  <li
+    class="default"
+  >
+    <a
+      href="http://some.reference"
+      target="_blank"
+    >
+      <i
+        class="default"
+      />
+      default
+    </a>
+  </li>
+</div>
+`;
+
+exports[`ContactElement component when the type is cv the Image class contain fas fa-passport as value: <i className="fas fa-passport" 1`] = `
+<div>
+  <li
+    class="contact-cv"
+  >
+    <a
+      target="_blank"
+    >
+      <i
+        class="fas fa-passport"
+      />
+       Currículum
+    </a>
+  </li>
+</div>
+`;
+
+exports[`ContactElement component when the type is cv the LI class contain contact-cv as value: <li class="contact-cv"> 1`] = `
+<div>
+  <li
+    class="contact-cv"
+  >
+    <a
+      target="_blank"
+    >
+      <i
+        class="fas fa-passport"
+      />
+       Currículum
+    </a>
+  </li>
+</div>
+`;
+
+exports[`ContactElement component when the type is cv the message is Curriculum: />Currículum</a> 1`] = `
+<div>
+  <li
+    class="contact-cv"
+  >
+    <a
+      target="_blank"
+    >
+      <i
+        class="fas fa-passport"
+      />
+       Currículum
+    </a>
+  </li>
+</div>
+`;

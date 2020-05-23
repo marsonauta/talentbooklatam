@@ -1,35 +1,117 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card component render the name: <h3>Andrea Escudero</h3> 1`] = `
-<article
-  class="latamer uxd senior"
->
+<article>
   <h3>
     Andrea Escudero
   </h3>
   <h4 />
+  <p />
+  <ul
+    class="contact"
+  >
+    <li
+      class="contact-cv"
+    >
+      <a
+        href="https://drive.google.com/open?id=1E48rb5mKkxbJkkgL8lZWurvk1cwHn_St"
+        target="_blank"
+      >
+        <i
+          class="fas fa-passport"
+        />
+         Currículum
+      </a>
+    </li>
+    <li
+      class="contact-in"
+    >
+      <a
+        href="https://www.linkedin.com/in/andreaescudero/"
+        target="_blank"
+      >
+        <i
+          class="fab fa-linkedin"
+        />
+         LinkedIn
+      </a>
+    </li>
+    <li
+      class="contact-wl"
+    >
+      <a
+        href="https://medium.com/latam-airlines/accesibilidad-digital-creando-experiencias-para-todos-52e420d3dbdb"
+        target="_blank"
+      >
+        <i
+          class="fab fa-medium"
+        />
+         Medium
+      </a>
+    </li>
+  </ul>
+</article>
+`;
+
+exports[`Card component render the role: <h4>UX Designer Senior</h4> 1`] = `
+<article>
+  <h3 />
+  <h4>
+    UX Designer Senior
+  </h4>
+  <p />
+  <ul
+    class="contact"
+  >
+    <li
+      class="contact-cv"
+    >
+      <a
+        href="https://drive.google.com/open?id=1E48rb5mKkxbJkkgL8lZWurvk1cwHn_St"
+        target="_blank"
+      >
+        <i
+          class="fas fa-passport"
+        />
+         Currículum
+      </a>
+    </li>
+    <li
+      class="contact-in"
+    >
+      <a
+        href="https://www.linkedin.com/in/andreaescudero/"
+        target="_blank"
+      >
+        <i
+          class="fab fa-linkedin"
+        />
+         LinkedIn
+      </a>
+    </li>
+    <li
+      class="contact-wl"
+    >
+      <a
+        href="https://medium.com/latam-airlines/accesibilidad-digital-creando-experiencias-para-todos-52e420d3dbdb"
+        target="_blank"
+      >
+        <i
+          class="fab fa-medium"
+        />
+         Medium
+      </a>
+    </li>
+  </ul>
+</article>
+`;
+
+exports[`Card component render the summary: <p>My summary</p> 1`] = `
+<article>
+  <h3 />
+  <h4 />
   <p>
-    Hola! en mi paso por el equipo UX de LATAM Airlines trabajé como UX Designer con foco en productos digitales dentro del flujo de compra del sitio. En mi rol como UXD trabajé en procesos de 
-    <em>
-      Discovery
-    </em>
-    , 
-    <em>
-      AI
-    </em>
-    , 
-    <em>
-      storytelling
-    </em>
-    , 
-    <em>
-      testing
-    </em>
-    , creación de 
-    <em>
-      wireframes
-    </em>
-    , prototipos y accesibilidad dentro de células ágiles.
+    My summary
   </p>
   <ul
     class="contact"
@@ -77,4 +159,55 @@ exports[`Card component render the name: <h3>Andrea Escudero</h3> 1`] = `
 </article>
 `;
 
-exports[`Card component render the rol: <h4>UX Designer Senior</h4> 1`] = `undefined`;
+exports[`Card component render with specific class: <article class="latamer uxd senior" 1`] = `
+<article
+  class="latamer uxd senior"
+>
+  <h3 />
+  <h4 />
+  <p />
+  <ul
+    class="contact"
+  >
+    <li
+      class="contact-cv"
+    >
+      <a
+        href="https://drive.google.com/open?id=1E48rb5mKkxbJkkgL8lZWurvk1cwHn_St"
+        target="_blank"
+      >
+        <i
+          class="fas fa-passport"
+        />
+         Currículum
+      </a>
+    </li>
+    <li
+      class="contact-in"
+    >
+      <a
+        href="https://www.linkedin.com/in/andreaescudero/"
+        target="_blank"
+      >
+        <i
+          class="fab fa-linkedin"
+        />
+         LinkedIn
+      </a>
+    </li>
+    <li
+      class="contact-wl"
+    >
+      <a
+        href="https://medium.com/latam-airlines/accesibilidad-digital-creando-experiencias-para-todos-52e420d3dbdb"
+        target="_blank"
+      >
+        <i
+          class="fab fa-medium"
+        />
+         Medium
+      </a>
+    </li>
+  </ul>
+</article>
+`;
