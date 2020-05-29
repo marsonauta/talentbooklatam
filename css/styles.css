@@ -214,6 +214,25 @@ footer{
   top:-800px;
 }
 
+/* hired */
+
+.hired h3,
+.hired h4,
+.hired p{
+  color:#aaa;
+}
+.hired h4 span{
+  color:#99127F;
+}
+.hired .contact a{
+  opacity:.3;
+}
+.hired h4 span:before{
+  content: '/';
+  color:#aaa;
+  margin-right:5px;
+}
+
 @media (min-width:760px){
   h2{
     font-size:38px;
