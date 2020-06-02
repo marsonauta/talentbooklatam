@@ -224,6 +224,9 @@ footer{
 .hired h4 span{
   color:#99127F;
 }
+.hired h4 span{
+  font-style:normal;
+}
 .hired .contact a{
   opacity:.3;
 }
