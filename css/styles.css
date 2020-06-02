@@ -91,7 +91,7 @@ h4{
   margin-bottom:4px;
 }
 select{
-  margin:4px 0;
+  margin:4px 4px;
   padding:8px;
   border:1px solid #000;
   background:#fff;
@@ -224,7 +224,7 @@ footer{
 .hired h4 span{
   color:#99127F;
 }
-.hired h4 span{
+.hired h4 span em{
   font-style:normal;
 }
 .hired .contact a{
