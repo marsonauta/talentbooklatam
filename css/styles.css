@@ -154,6 +154,18 @@ select:last-child{
   margin-right:4px;
   font-size:18px;
 }
+.availability{
+  display:inline-block;
+  width:100%;
+  padding:4px 8px;
+  border-radius:4px;
+  background:hsla(237,90%,49%,.03);
+  border:1px solid hsla(237,90%,49%,.1);
+  margin-bottom:16px;
+}
+.contact li.availability{
+  margin-bottom:16px;
+}
 footer{
   color:#999;
   text-align:center;
