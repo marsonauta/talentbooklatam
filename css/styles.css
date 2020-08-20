@@ -247,6 +247,9 @@ footer{
   color:#aaa;
   margin-right:5px;
 }
+.hired .contact-cv{
+  display:none;
+}
 
 @media (min-width:760px){
   h2{
